@@ -1,9 +1,14 @@
 package player;
 
 import game_control.Board;
-import game_control.PlayerMove;
+
+import javax.swing.*;
 
 public interface IPlayer {
 
-    PlayerMove makeMove(Board currentBoardState);
+    Board makeMove(Board currentBoardState);
+    String getName();
+    int minimax();
+    ImageIcon color();
+
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.StarterPageGUI">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridBagLayout">
+  <grid id="27dc6" binding="MainPanel" custom-create="true" layout-manager="GridBagLayout">
     <constraints>
       <xy x="20" y="20" width="667" height="540"/>
     </constraints>
@@ -25,7 +25,7 @@
               <component id="d2f89" class="javax.swing.JTextPane" binding="nameTextPane" default-binding="true">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="1.0"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
                 </constraints>
                 <properties>
                   <editable value="false"/>
@@ -35,7 +35,7 @@
               <component id="63eb2" class="javax.swing.JTextArea" binding="pl1_name">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties/>
               </component>
@@ -56,13 +56,26 @@
                   <text value="Choose Player Type"/>
                 </properties>
               </component>
-              <component id="b4895" class="javax.swing.JSpinner" binding="pl1_type">
+              <grid id="70fb5" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties/>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="d6809" class="javax.swing.JTextArea" binding="player1ChooseType" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
           <grid id="abffe" binding="pane13" layout-manager="GridBagLayout">
@@ -70,13 +83,6 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="30416" class="javax.swing.JSpinner" binding="pl1_depth">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
-                </constraints>
-                <properties/>
-              </component>
               <component id="31fe5" class="javax.swing.JTextPane" binding="gameTreeDepthTextPane" default-binding="true">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -87,6 +93,26 @@
                   <text value="Game Tree Depth"/>
                 </properties>
               </component>
+              <grid id="e38a5" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f64a3" class="javax.swing.JTextArea" binding="player1ChooseDepth" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
           <grid id="10b9d" binding="pane14" layout-manager="GridBagLayout">
@@ -104,13 +130,26 @@
                   <text value="Color"/>
                 </properties>
               </component>
-              <component id="db43e" class="javax.swing.JSpinner" binding="pl1_color">
+              <grid id="894b2" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties/>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="30032" class="javax.swing.JTextArea" binding="player1ChooseColor" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
         </children>
@@ -164,13 +203,27 @@
                   <text value="Choose Player Type"/>
                 </properties>
               </component>
-              <component id="a3d98" class="javax.swing.JSpinner" binding="pl2_type">
+              <grid id="66cff" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties/>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="56a79" class="javax.swing.JTextArea" binding="player2ChooseType" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
           <grid id="d4856" binding="pane23" layout-manager="GridBagLayout">
@@ -189,13 +242,26 @@
                   <text value="Game Tree Depth"/>
                 </properties>
               </component>
-              <component id="bb3b9" class="javax.swing.JSpinner" binding="pl2_depth">
+              <grid id="fa530" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties/>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="1c613" class="javax.swing.JTextArea" binding="player2ChooseDepth" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
           <grid id="f5ac6" binding="pane24" layout-manager="GridBagLayout">
@@ -203,13 +269,6 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="74e7e" class="javax.swing.JSpinner" binding="pl2_color">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
-                </constraints>
-                <properties/>
-              </component>
               <component id="fa273" class="javax.swing.JTextPane" binding="colorTextPane1" default-binding="true">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -220,6 +279,26 @@
                   <text value="Color"/>
                 </properties>
               </component>
+              <grid id="79c84" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f1a50" class="javax.swing.JTextArea" binding="player2ChooseColor" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-855310"/>
+                      <editable value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
         </children>
